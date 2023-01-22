@@ -1,18 +1,14 @@
 package com.example.RegistrationCodecademy;
 
 import java.time.Duration;
-import java.util.regex.Pattern;
-import java.util.concurrent.TimeUnit;
+
 import org.junit.*;
 import static org.junit.Assert.*;
-import static org.hamcrest.CoreMatchers.*;
+
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.Select;
-import org.apache.commons.io.FileUtils;
-import java.io.File;
 
-public class New {
+public class RegisterNewAccount {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -32,7 +28,7 @@ public class New {
     driver.get("https://www.codecademy.com/");
     driver.findElement(By.id("email")).click();
 
-    driver.findElement(By.id("email")).sendKeys("test+33@test.ii");
+    driver.findElement(By.id("email")).sendKeys("test+34@test.ii");
     driver.findElement(By.id("password")).click();
 
     driver.findElement(By.id("password")).sendKeys("QWEqwe123$$");
